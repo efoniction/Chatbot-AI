@@ -60,7 +60,7 @@ export default function ChatBox(props) {
 
   useEffect(() => {
     if(chats.length === 0) {
-      ChatApi.direct_request("welcomegreeting").then(onDataReceived)
+      ChatApi.direct_request("welcome greeting").then(onDataReceived)
     }
     if(divRef.current){
       divRef.current.scrollTop = 0
@@ -77,7 +77,7 @@ export default function ChatBox(props) {
       }}
     >
       <div className="chat-box-top bg-red-800 h-11 w-full text-white flex items-center px-5">
-        <h6 className="font-bold mx-2 text-xs">College Enquiry Chatbot</h6>
+        <h6 className="font-bold mx-2 text-xs">College Enquiry Chatbot-AI</h6>
         <span className="flex-1" />
         <button
           className="speach-btn hover:scale-125 m-5"
